@@ -1,0 +1,186 @@
+/* Основные стили */
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* На всякий случай дублируем для старых браузеров */
+}
+
+main {
+    flex: 1;
+}
+
+/* Навбар */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Герой-секция */
+.hero-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 100px 0;
+}
+
+.hero-section img {
+    max-width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Карточки навыков */
+.skill-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-card i {
+    color: #0d6efd;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    border-radius: 5px;
+}
+
+/* Карточки работ */
+.work-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Социальные иконки */
+.social-links a {
+    color: #fff;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+}
+
+/* Подвал */
+footer {
+    width: 100%;
+    margin-top: auto;
+    background-color: #000 !important;
+    color: white;
+}
+
+/* Модальные окна */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-top: 30px;
+        max-width: 200px;
+    }
+    
+    .skill-card, .work-card {
+        margin-bottom: 20px;
+    }
+
+    /* Улучшение отступов для мобильных */
+    section {
+        padding: 40px 0 !important;
+    }
+}
+
+/* Дополнительные улучшения для контраста */
+.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+/* Стиль для карточки работ */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Занимает всю доступную высоту */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Растягивается на всё свободное пространство */
+}
+
+.card-footer-content {
+    margin-top: auto; /* Прижимает контент к низу */
+    padding-top: 1rem; /* Добавляет отступ сверху */
+}
+
+/* Стили для аватарок клиентов */
+.client-avatar {
+    width: 50px;    /* Фиксированный размер */
+    height: 50px;   /* Фиксированный размер */
+    min-width: 50px; /* Запрещаем сжатие */
+    overflow: hidden; /* Обрезаем всё, что выходит за круг */
+    border-radius: 50%; /* Делаем круг */
+    border: 2px solid #fff; /* Белая рамка */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Лёгкая тень */
+}
+
+.client-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Заполняем круг без искажений */
+}
+
+/* Стили для круглого фото профиля */
+.profile-photo-container {
+  width: 300px;         /* Фиксированный размер круга */
+  height: 300px;        /* Фиксированный размер круга */
+  border-radius: 50%;    /* Делаем круг */
+  border: 1px solid #fff; /* Тонкая белая обводка */
+  padding: 3px;         /* Отступ внутри обводки */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Легкая тень */
+  margin: 100px;       /* Центрирование по горизонтали */
+  overflow: hidden;     /* Обрезаем углы фото */
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* Заполнение круга без искажений */
+  border-radius: 50%;   /* Дополнительное скругление */
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Мое Портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="works.html">Мои работы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Привет, я Пистер Александр</h1>
+                    <p class="lead">Frontend-разработчик</p>
+                    <p>Я начинающий фронтенд-разработчик, умею верстать адаптивные сайты на HTML и CSS, а также добавлять интерактивность с помощью JavaScript. Работал с Bootstrap и немного с React. Стараюсь делать код понятным и аккуратным. Учусь новому каждый день и хочу развиваться в веб-разработке, чтобы создавать удобные и современные сайты.</p>
+                    <a href="#skills" class="btn btn-primary me-2">Мои навыки</a>
+                    <a href="works.html" class="btn btn-outline-primary">Мои работы</a>
+                </div>
+                <div class="profile-photo-container">
+                    <img src="img/profile.jpg" alt="Мое фото" class="profile-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция навыков -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Мои навыки</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-code fa-3x mb-3"></i>
+                            <h5 class="card-title">Веб-разработка</h5>
+                            <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-paint-brush fa-3x mb-3"></i>
+                            <h5 class="card-title">Дизайн</h5>
+                            <p class="card-text">Photoshop, Figma, UI/UX Design</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card skill-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                            <h5 class="card-title">Мобильная разработка</h5>
+                            <p class="card-text">React Native, Flutter</p>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%">60%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Отзывы</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                            <p class="card-text">"Отличная работа! Все было сделано в срок и с высоким качеством."</p>
+                            <div class="d-flex align-items-center">
+                                <div class="client-avatar me-3">
+                                    <img src="img/client1.jpg" alt="Клиент" class="img-fluid rounded-circle">
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Дмитрий Иванов</h6>
+                                    <small class="text-muted">Директор, Компания "Эталон"</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                            <p class="card-text">"Профессиональный подход к делу. Рекомендую!"</p>
+                            <div class="d-flex align-items-center">
+                                <div class="client-avatar me-3">
+                                    <img src="img/client2.jpg" alt="Клиент" class="img-fluid">
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Мария Петрова</h6>
+                                    <small class="text-muted">Менеджер, Компания "Яндекс"</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Свяжитесь со мной</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="contact-info">
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-map-marker-alt me-3 mt-1"></i>
+                            <div>
+                                <h5>Адрес</h5>
+                                <p>г. Цимлянск, ул. Ленина, д. 12</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-phone me-3 mt-1"></i>
+                            <div>
+                                <h5>Телефон</h5>
+                                <p>+7 (923) 563-77-13</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                            <i class="fas fa-envelope me-3 mt-1"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>pistersasha2007@mail.ru</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fab fa-vk fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-telegram fa-2x"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="py-3 bg-black text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Мое Портфолио. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

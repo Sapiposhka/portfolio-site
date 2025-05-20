@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои работы | Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Мое Портфолио</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="works.html">Мои работы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="flex-shrink-0"> <!-- Добавлено для правильного прижатия подвала -->
+        <section class="py-5">
+            <div class="container">
+                <h1 class="text-center mb-5">Мои работы</h1>
+                <div class="row g-4">
+                    <!-- Работа 1 -->
+                    <div class="col-md-4">
+                        <div class="card work-card h-100">
+                            <img src="img/work1.jpg" class="card-img-top" alt="Работа 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Веб-сайт для компании "Эталон"</h5>
+                                <p class="card-text">Корпоративный сайт с адаптивным дизайном и системой управления контентом.</p>
+                                <!-- Блок с кнопкой и тегом прижат к низу -->
+                                <div class="card-footer-content d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-primary">Веб-разработка</span>
+                                    <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#workModal1">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 2 -->
+                    <div class="col-md-4">
+                        <div class="card work-card h-100">
+                            <img src="img/work2.jpeg" class="card-img-top" alt="Работа 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Мобильное приложение "Безопасность"</h5>
+                                <p class="card-text">Приложение для iOS и Android с функцией геолокации, тревожной кнопки и push-уведомлениями.</p>
+                                <div class="card-footer-content d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success">Мобильная разработка</span>
+                                    <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#workModal2">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Работа 3 -->
+                    <div class="col-md-4">
+                        <div class="card work-card h-100">
+                            <img src="img/work3_1.jpg" class="card-img-top" alt="Работа 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Логотип для сайта "Quota company"</h5>
+                                <p class="card-text">Разработка фирменного стиля и логотипа для нового веб-приложения планировщика задач. Программа предназначена для автоматизации процесса постановки, выполнения и контроля задач в компании. Каждый сотрудник имеет личный кабинет с правами доступа, соответствующими его должности.</p>
+                                <div class="card-footer-content d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-warning text-dark">Дизайн</span>
+                                    <a href="#" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#workModal3">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Модальные окна для работ -->
+        <div class="modal fade" id="workModal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Веб-сайт для компании "Эталон"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/work1.jpg" class="img-fluid mb-3" alt="Работа 1">
+                        <p><strong>Задача:</strong> Создать современный корпоративный сайт для компании, занимающейся IT-услугами.</p>
+                        <p><strong>Решение:</strong> Разработан адаптивный сайт с системой управления контентом, позволяющей сотрудникам компании самостоятельно обновлять информацию.</p>
+                        <p><strong>Технологии:</strong> HTML5, CSS3, JavaScript, PHP, MySQL.</p>
+                        <p><strong>Сроки:</strong> 2 месяца.</p>
+                        <p><strong>Результат:</strong> Увеличение количества заявок с сайта на 40%.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="workModal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Мобильное приложение "Безопасность"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/work2.jpeg" class="img-fluid mb-3" alt="Работа 2">
+                        <p><strong>Задача:</strong> Разработать мобильное приложение для мониторинга безопасности.</p>
+                        <p><strong>Решение:</strong> Приложение с геолокацией, push-уведомлениями и тревожной кнопкой.</p>
+                        <p><strong>Технологии:</strong> React Native, Firebase.</p>
+                        <p><strong>Сроки:</strong> 3 месяца.</p>
+                        <p><strong>Результат:</strong> 10 000+ установок в Google Play.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="workModal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Логотип для сайта "Quota company"</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/work3.jpg" class="img-fluid mb-3" alt="Работа 3">
+                        <p><strong>Задача:</strong> Создать запоминающийся логотип и дизайн для веб-приложения планировщика задач.</p>
+                        <p><strong>Решение:</strong> Минималистичный логотип с символом "Q" и дизайн в серых тонах.</p>
+                        <p><strong>Инструменты:</strong> Adobe Photoshop, Figma.</p>
+                        <p><strong>Сроки:</strong> 2 недели.</p>
+                        <p><strong>Результат:</strong> Логотип и дизайн приняты клиентом с первого варианта.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <a href="https://quotacompany.online" class="btn btn-primary">Посетить сайт</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="py-3 bg-black text-white text-center mt-auto"> <!-- Добавлен mt-auto -->
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Мое Портфолио. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
